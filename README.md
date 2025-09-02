@@ -3,3 +3,22 @@
 👋 Hello! Welcome to my Github profile.
 
 # 📂 JavaScript Projects 
+
+JAVASCRIPT-ONLY/
+├─ ImageGenerator/
+
+
+
+## 🛠️ Technologies
+
+- **JavaScript (ES6+)**  
+- **HTML5 & CSS3**  (WHEN NECESSARY)
+
+📄 License
+
+This repository is licensed under the GPL – use, modify, and learn at will.
+
+👨‍💻 Author
+
+Developed by Hyago Dias
+ · A JavaScript Padawan learning the ways of the code ✨
