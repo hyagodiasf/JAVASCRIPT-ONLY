@@ -6,7 +6,7 @@
 
 JAVASCRIPT-ONLY/
 
-├─ ImageGenerator/
+├─ ImageGeneratorAI/
 
 
 
