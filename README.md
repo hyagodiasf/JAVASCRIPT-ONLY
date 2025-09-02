@@ -5,6 +5,7 @@
 # 📂 JavaScript Projects 
 
 JAVASCRIPT-ONLY/
+
 ├─ ImageGenerator/
 
 
