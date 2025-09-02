@@ -1,6 +1,5 @@
+<img width="512" height="512" alt="javascript_logo_icon_168607" src="https://github.com/user-attachments/assets/82764bf7-56ef-425f-973f-e8a7029bbcb3" />
 
-
-![ilha-grande-191-c](https://github.com/user-attachments/assets/2e88fa8d-9f55-463e-8ba2-3751a2202830)
 👋 Hello! Welcome to my Github profile.
 
 # 📂 JavaScript Projects 
