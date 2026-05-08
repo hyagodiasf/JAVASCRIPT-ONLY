@@ -1,16 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/**
+    Style - comportamento estilístico do projeto
+    @hyagodiasbjj
+*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
+:root {
+  --color-primary: #5c56e1;
+  --color-primary-dark: #5b21b6;
+  --color-accent: #8b5cf6;
+  --color-card: #ffffff;
+  --color-input: #f1f1ff;
+  --color-placeholder: #5c5a87;
+  --color-text: #09090e;
+  --color-border: #d4d4ed;
+  --color-gradient: linear-gradient(135deg, #5c56e1, #8b5cf6);
+}
+
+body {
+  align-items: center;
+  color: var(--color-text);
+  background: linear-gradient(#e9e9ff, #c8c7ff);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+.container {
+  background: var(--color-card);
+  border-radius: 23px;  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 32px;
+  position: relative;
+  width: 900px;
+}
+
+.container::before {
+  background:  var(--color-gradient);
+  content: "";
+  height: 5px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+
+.header {
+    align-items: center;
     display: flex;
+    justify-content: space-between;
+}
+
+.header .logo-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 18px;
+}
+
+.header .logo-wrapper h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.header .logo-wrapper .logo {
+    align-items: center;
+    border-radius: 15px;
+    background: var(--color-gradient);
+    color: #fff;
+    display: flex;
+    height: 55px;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 56px;
+}
+
+.header .theme-toggle {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    color: var(--color-placeholder);
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#E9E9FF, #C8C7FF);
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.header .theme-toggle:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    margin: 35px 0 5px;
+}
+
+.main-content .prompt-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.prompt-container .prompt-input{
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    min-height: 120px;
+    padding: 16px 20px;
+    border-radius: 15px;
+    color: var(--color-text);
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
 }
