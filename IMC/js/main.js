@@ -17,7 +17,6 @@ function resultado(msg) {
 
 const form = document.querySelector('.form');
 const imcP = document.querySelectorAll('.imc p');
-const resultadoP = document.querySelectorAll('.resultado p');
 
 
 form.addEventListener('submit', (e) => {
@@ -70,19 +69,19 @@ form.addEventListener('submit', (e) => {
         indice = 0;
         cor = 'verde';
 
-    } else if (imcRes < 25) {
+    } else if (imcRes >= 18.5 && imcRes <= 24.9) {
         indice = 1;
         cor = 'verde';
 
-    } else if (imcRes < 30) {
+    } else if (imcRes > 24.9 && imcRes <= 29,9) {
         indice = 2;
         cor = 'amarelo';
 
-    } else if (imcRes < 35) {
+    } else if (imcRes > 29,930 && imcRes <= 34,9) {
         indice = 3;
         cor = 'laranja';
 
-    } else if (imcRes < 40) {
+    } else if (imcRes > 34,9 && imcRes <= 39,9) {
         indice = 4;
         cor = 'vermelho';
 
