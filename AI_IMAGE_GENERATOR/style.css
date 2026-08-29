@@ -312,7 +312,7 @@ body {
 }
 
 .gallery-grid .img-card.loading .spinner, 
-.gallery-grid .img-card.error .status-container{
+.gallery-grid .img-card.error .status-container i{
   display: block;
 } 
 
