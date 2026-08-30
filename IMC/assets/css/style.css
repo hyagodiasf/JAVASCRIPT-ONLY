@@ -71,7 +71,11 @@ body {
 }
 
 .verde {
-    background-color: green;
+    background-color: rgb(0, 104, 0);
+}
+
+.verdeClaro {
+    background-color: rgb(117, 224, 117);
 }
 
 .amarelo {
