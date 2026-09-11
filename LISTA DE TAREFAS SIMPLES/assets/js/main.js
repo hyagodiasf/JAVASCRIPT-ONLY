@@ -21,7 +21,23 @@ function addTask() {
     taskList.appendChild(createTaskItem(taskInput.value.trim()));
     updateTaskNumbers();
     taskInput.value = '';
+    saveTasks();
 }
+
+function saveTasks() {
+    const tasks = taskList.querySelectorAll('li');
+    const taskArray = Array.from(tasks).map(task => task.textContent.replace(/^\d+ - /, ''));
+    localStorage.setItem('tasks', JSON.stringify(taskArray));
+}
+
+function loadTasks() {
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks.forEach(task => {
+        taskList.appendChild(createTaskItem(task));
+    }   );
+    updateTaskNumbers();
+}  
+loadTasks();
 
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
@@ -38,5 +54,6 @@ removeTaskBtn.addEventListener('click', (e) => {
     if (tasks.length > 0) {
         taskList.removeChild(tasks[tasks.length - 1]);
         updateTaskNumbers();
+        saveTasks();
     }
 });
