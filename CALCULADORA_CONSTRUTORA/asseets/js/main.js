@@ -18,15 +18,26 @@ function Calculadora() {
             if (el.classList.contains('btn-eq')) {
                 this.eqCalculo();
             }
+            
         });
     };
 
     this.inicia = () => {
         this.capturaCliques();
+        this.capturaEnter();
+    };
+
+    this.capturaEnter = () => {
+        document.addEventListener('keypress', event => {
+            if (event.key === 'Enter') {
+                this.eqCalculo();
+            }
+        });
     };
 
     this.addNumDisplay = el => {
         this.display.value += el.innerText;
+        this.display.focus();
     };
 
     this.clearDisplay = () => {
